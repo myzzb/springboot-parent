@@ -1,0 +1,10 @@
+##服务端口
+server:
+  port: 8334
+
+
+spring:
+  dubbo:
+    application:
+      name: dubbo-provider
+      registry: zookeeper://192.168.0.245:2181
