@@ -1,0 +1,9 @@
+##服务端口
+server:
+  port: 80
+
+spring:
+  dubbo:
+    application:
+      name: dubbo-consuter
+      registry: zookeeper://192.168.0.245:2181
