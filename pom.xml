@@ -12,6 +12,7 @@
         <module>springboot-interface</module>
         <module>springboot-api</module>
         <module>springboot-service</module>
+        <module>springboot-common</module>
     </modules>
 
     <dependencyManagement>
