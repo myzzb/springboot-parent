@@ -2,6 +2,8 @@ package com.myapp.core.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.myapp.HelloService;
+import com.myapp.core.bean.TestConfig;
+import com.myapp.core.config.TokenInterceptor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,8 +21,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello() {
         System.out.println("------------------001---------------------执行api--------------------------------");
-        String hello = helloService.sayHello("Hello world");
-
+        String hello = helloService.sayHello("Hello world "+TestConfig.getTestName());
         return hello;
     }
 }
