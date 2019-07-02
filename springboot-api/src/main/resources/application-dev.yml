@@ -1,0 +1,24 @@
+##服务端口
+server:
+  port: 8088
+
+spring:
+  dubbo:
+    application:
+      name: dubbo-consuter
+      registry: zookeeper://192.168.0.117:2181
+
+##日志信息
+logging:
+  file: /usr/local/app/log/my.log
+  level:
+    xatu.zsl: debug #不同目录下的日志可配置不同级别
+    org.springfromework.web: info
+    org.hibernate: error
+    com.ainiding.phone.core.mapper: trace
+    com.alibaba.dubbo: error
+
+#Interceptor相关配置
+interceptor:
+  configs: /**
+

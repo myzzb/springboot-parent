@@ -1,0 +1,20 @@
+##服务端口
+server:
+  port: 8334
+
+##配置zookeeper
+spring:
+  dubbo:
+    application:
+      name: dubbo-provider
+      registry: zookeeper://192.168.0.117:2181
+  datasource: ##配置数据源
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+##mybatis配置
+mybatis:
+  type-aliases-package: com.myapp.core.model.*
+  mapper-locations: classpath:mapper/*/*.xml
