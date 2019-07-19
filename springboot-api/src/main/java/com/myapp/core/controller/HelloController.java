@@ -3,7 +3,6 @@ package com.myapp.core.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.myapp.HelloService;
 import com.myapp.core.bean.TestConfig;
-import com.myapp.core.config.TokenInterceptor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
