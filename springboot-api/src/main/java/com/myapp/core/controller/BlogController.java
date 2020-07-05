@@ -10,14 +10,14 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 
+
 /**
  * @author :zzb
- * @createDate :2019/7/19 10:28
+ * @createDate :2020/7/5 9:54 下午
  * @desc :
  */
 @RestController
 public class BlogController {
-
     @Reference
     private BlogService blogService;
 
@@ -31,7 +31,7 @@ public class BlogController {
         blog.setPwd("zzb");
         Timestamp time = new Timestamp(Calendar.getInstance().getTimeInMillis());
         blog.setCreateTime(time);
-        System.out.println(time+"===========时间------"+LocalDateTime.now());
+        System.out.println(time+"===========时间------"+ LocalDateTime.now());
         blogService.insert(blog);
         return "添加成功"+count;
     }

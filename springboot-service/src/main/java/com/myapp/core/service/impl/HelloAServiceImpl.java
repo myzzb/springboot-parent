@@ -20,7 +20,7 @@ public class HelloAServiceImpl implements HelloAService {
     @Override
     public String sayHello(String name) {
         System.out.println("----------------------002-----------------执行BIZ层service--------------------------------");
-        userDao.addUser("zzb0001","zzb0001");
-        return name+"-------Service";
+        //userDao.addUser("zzb0001","zzb0001");
+        return name;
     }
 }
