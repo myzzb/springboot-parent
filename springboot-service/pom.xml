@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.myapp</groupId>
     <artifactId>springboot-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <!--<version>0.0.1-SNAPSHOT</version>-->
     <name>springboot-service</name>
     <description>Demo project for Spring Boot</description>
 
@@ -76,6 +76,8 @@
     </dependencies>
 
     <build>
+        <!-- 产生的构建的文件名，默认值是${artifactId}-${version}。 -->
+        <finalName>springboot-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
